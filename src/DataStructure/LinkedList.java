@@ -16,4 +16,13 @@ public class LinkedList {
             this.data = data;
         }
     }
+
+    // Implementa o construtor da nossa lista
+    public LinkedList(String data) {
+        size = 1;
+        Node newNode = new Node(data);
+        head = newNode;
+        tail = newNode;
+    }
+
 }
