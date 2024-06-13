@@ -25,4 +25,13 @@ public class LinkedList {
         tail = newNode;
     }
 
+    // Método de pega o primeiro elemento da lista
+    public void getFirst() {
+        if (this.head == null) {
+            System.out.println("Lista vazia!");
+        } else {
+            System.out.println("Primeiro elemento da lista: " + head.data);
+        }
+    }
+
 }
