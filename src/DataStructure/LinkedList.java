@@ -67,4 +67,18 @@ public class LinkedList {
         }
         System.out.println("------------------------\n");
     }
+
+    // Método de adicionar elementos ao início da lista
+    public void addFirst(String data) {
+        Node newNode = new Node(data);
+        if (size == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        size++;
+    }
+
 }
