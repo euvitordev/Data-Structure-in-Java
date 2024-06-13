@@ -34,4 +34,14 @@ public class LinkedList {
         }
     }
 
+    // Método de pega o último elemento da lista
+    public void getLast() {
+        if (this.tail == null) {
+            System.out.println("Lista vazia!");
+        } else {
+            System.out.println("Último elemento da lista: " + tail.data);
+        }
+    }
+
+
 }
