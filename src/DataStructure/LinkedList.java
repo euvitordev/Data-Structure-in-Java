@@ -159,4 +159,13 @@ public class LinkedList {
         return true;
     }
 
+    // Método para alterar um elemento em uma posição específica da lista
+    public boolean set(int index, String data) {
+        Node current = get(index);
+        if (current != null) {
+            current.data = data;
+            return true;
+        }
+        return false;
+    }
 }
