@@ -47,4 +47,12 @@ public class LinkedList {
     public void getSize() {
         System.out.println("Tamanho da lista: " + this.size);
     }
+
+    // Método para esvaziar a lista
+    public void clear() {
+        head = null;
+        tail = null;
+        size = 0;
+        System.out.println("Limpando a lista...");
+    }
 }
