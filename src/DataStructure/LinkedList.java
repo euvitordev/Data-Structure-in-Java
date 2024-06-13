@@ -81,4 +81,17 @@ public class LinkedList {
         size++;
     }
 
+    // Método de adicionar elementos ao final da lista
+    public void addLast(String data) {
+        Node newNode = new Node(data);
+        if (size == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        size++;
+    }
+
 }
