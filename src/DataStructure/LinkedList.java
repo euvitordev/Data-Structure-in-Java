@@ -55,4 +55,16 @@ public class LinkedList {
         size = 0;
         System.out.println("Limpando a lista...");
     }
+
+    // Método para imprimir a lista
+    public void printList() {
+        System.out.println("\n------------------------");
+        System.out.println("Imprimindo a lista:");
+        Node current = this.head;
+        while (current != null) {
+            System.out.println("• " + current.data);
+            current = current.next;
+        }
+        System.out.println("------------------------\n");
+    }
 }
