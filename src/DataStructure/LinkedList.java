@@ -139,4 +139,24 @@ public class LinkedList {
         }
         return current;
     }
+
+    // Método para adicionar um elemento em uma posição específica da lista
+    public boolean insert(int index, String data) {
+        if (index < 0 || index > size) return false;
+        if (index == 0) {
+            addFirst(data);
+            return true;
+        }
+        if (index == size) {
+            addLast(data);
+            return true;
+        }
+        Node newNode = new Node(data);
+        Node prev = get(index - 1);
+        newNode.next = prev.next;
+        prev.next = newNode;
+        size++;
+        return true;
+    }
+
 }
