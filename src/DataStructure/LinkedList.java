@@ -130,4 +130,13 @@ public class LinkedList {
         return temp;
     }
 
+    // Método para ler um elemento da lista
+    public Node get(int index) {
+        if (index < 0 || index >= size) return null;
+        Node current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        return current;
+    }
 }
