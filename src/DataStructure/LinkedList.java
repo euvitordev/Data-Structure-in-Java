@@ -94,4 +94,19 @@ public class LinkedList {
         size++;
     }
 
+    // Método de remover elementos do início da lista
+    public Node removeFirst() {
+        if (size == 0) return null;
+        Node temp = head;
+        head = head.next;
+        temp.next = null;
+        size--;
+        if (size == 0) {
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
+
+
 }
