@@ -108,5 +108,26 @@ public class LinkedList {
         return temp;
     }
 
+    // Método de remover elementos do fim da lista
+    public Node removeLast() {
+        if (size == 0) return null;
+        Node current = head;
+        Node temp = null;
+
+        while (current.next != tail) {
+            current = current.next;
+        }
+
+        temp = tail;
+        tail = current;
+        tail.next = null;
+
+        size--;
+        if (size == 0) {
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
 
 }
