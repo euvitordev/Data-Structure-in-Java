@@ -43,5 +43,8 @@ public class LinkedList {
         }
     }
 
-
+    // Método de obter o tamanho da lista
+    public void getSize() {
+        System.out.println("Tamanho da lista: " + this.size);
+    }
 }
