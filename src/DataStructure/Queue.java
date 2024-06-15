@@ -63,4 +63,19 @@ public class Queue {
         }
         length++;
     }
+
+    public Node dequeue() {
+        if (length == 0) return null;
+        Node temporary = first;
+        if (length == 1) {
+            first = null;
+            last = null;
+        } else {
+            first = first.next;
+            temporary.next = null;
+        }
+        length--;
+        System.out.println("\nElemento removido: " + temporary.value + "\n");
+        return temporary;
+    }
 }
