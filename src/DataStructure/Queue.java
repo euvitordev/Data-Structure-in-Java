@@ -14,5 +14,11 @@ public class Queue {
         }
     }
 
+    public Queue(int value) {
+        Node newNode = new Node(value);
+        first = newNode;
+        last = newNode;
+        length++;
+    }
 
 }
