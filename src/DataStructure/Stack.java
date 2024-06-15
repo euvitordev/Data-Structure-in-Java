@@ -32,4 +32,12 @@ public class Stack {
     public void getHeight() {
         System.out.println("Altura: " + height);
     }
+
+    public void print() {
+        Node temporary = top;
+        while (temporary != null) {
+            System.out.println(temporary.value);
+            temporary = temporary.next;
+        }
+    }
 }
