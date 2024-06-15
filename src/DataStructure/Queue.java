@@ -21,4 +21,12 @@ public class Queue {
         length++;
     }
 
+    // Métodos
+    public void getFirst() {
+        if (first != null) {
+            System.out.println("Primeiro da fila: " + first.value);
+        } else {
+            System.out.println("Lista vazia!");
+        }
+    }
 }
