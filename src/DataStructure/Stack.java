@@ -1,6 +1,9 @@
 package DataStructure;
 
 public class Stack {
+    // Atributos
+    private Node top;
+    private int height;
 
     class Node {
         int value;
