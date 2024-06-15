@@ -37,4 +37,8 @@ public class Queue {
             System.out.println("Fila vazia!");
         }
     }
+
+    public void getLength() {
+        System.out.println("Tamanho da fila: " + length);
+    }
 }
