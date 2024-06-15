@@ -26,7 +26,15 @@ public class Queue {
         if (first != null) {
             System.out.println("Primeiro da fila: " + first.value);
         } else {
-            System.out.println("Lista vazia!");
+            System.out.println("Fila vazia!");
+        }
+    }
+
+    public void getLast() {
+        if (last != null) {
+            System.out.println("Último da fila: " + last.value);
+        } else {
+            System.out.println("Fila vazia!");
         }
     }
 }
