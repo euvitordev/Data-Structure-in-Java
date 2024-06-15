@@ -43,10 +43,24 @@ public class Queue {
     }
 
     public void print() {
+        System.out.println("\nImprimindo a fila:");
         Node temporary = first;
         while (temporary != null) {
-            System.out.println(temporary.value);
+            System.out.println("• " + temporary.value);
             temporary = temporary.next;
         }
+        System.out.println("Fim da fila...\n");
+    }
+
+    public void enqueue(int value){
+        Node newNode = new Node(value);
+        if (length == 0) {
+            first = newNode;
+            last = newNode;
+        } else {
+            last.next = newNode;
+            last = newNode;
+        }
+        length++;
     }
 }
