@@ -20,4 +20,12 @@ public class Stack {
         height = 1;
     }
 
+    // Métodos
+    public void getTop() {
+        if (top == null) {
+            System.out.println("Pilha vazia!");
+        } else {
+            System.out.println("Topo: " + top.value);
+        }
+    }
 }
