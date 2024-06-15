@@ -28,4 +28,8 @@ public class Stack {
             System.out.println("Topo: " + top.value);
         }
     }
+
+    public void getHeight() {
+        System.out.println("Altura: " + height);
+    }
 }
