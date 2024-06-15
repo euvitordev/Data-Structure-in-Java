@@ -40,4 +40,13 @@ public class Stack {
             temporary = temporary.next;
         }
     }
+
+    public void push(int value) {
+        Node newNode = new Node(value);
+        if (height != 0) {
+            newNode.next = top;
+        }
+        top = newNode;
+        height++;
+    }
 }
