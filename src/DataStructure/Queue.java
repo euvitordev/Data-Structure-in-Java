@@ -41,4 +41,12 @@ public class Queue {
     public void getLength() {
         System.out.println("Tamanho da fila: " + length);
     }
+
+    public void print() {
+        Node temporary = first;
+        while (temporary != null) {
+            System.out.println(temporary.value);
+            temporary = temporary.next;
+        }
+    }
 }
