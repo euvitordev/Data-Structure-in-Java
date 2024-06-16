@@ -12,5 +12,12 @@ public class Tree {
         public Node(int value) {
             this.value = value;
         }
+
+        public boolean isLeaf() {
+            return (this.left == null) && (this.right == null);
+        }
+
     }
+
+    // Métodos
 }
