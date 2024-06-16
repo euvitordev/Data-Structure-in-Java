@@ -2,6 +2,8 @@ package DataStructure;
 
 public class Tree {
 
+    public Node root;
+
     public static class Node {
         public int value;
         public Node left;
