@@ -68,4 +68,14 @@ public class Tree {
         inOrder(node.right);
     }
 
+    public void posOrder() {
+        posOrder(root);
+    }
+    private void posOrder(final Node node) {
+        if (node == null) return;
+        posOrder(node.left);
+        posOrder(node.right);
+        System.out.println(node.value);
+    }
+
 }
