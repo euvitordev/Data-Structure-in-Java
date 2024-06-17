@@ -51,11 +51,21 @@ public class Tree {
     public void preOrder() {
         preOrder(root);
     }
-
     private void preOrder(final Node node) {
         if (node == null) return;
         System.out.println(node.value);
         preOrder(node.left);
         preOrder(node.right);
     }
+
+    public void inOrder() {
+        inOrder(root);
+    }
+    private void inOrder(final Node node) {
+        if (node == null) return;
+        inOrder(node.left);
+        System.out.println(node.value);
+        inOrder(node.right);
+    }
+
 }
